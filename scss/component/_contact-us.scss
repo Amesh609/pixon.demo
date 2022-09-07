@@ -1,0 +1,33 @@
+.office-location {
+    margin: 100px 0;
+    justify-content: space-between;
+}
+
+.address-card {
+    padding: 40px;
+    // margin: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .35);
+    // display: inline-block;
+    background-color: #222429;
+    color: white;
+    border-radius: 8px;
+    width: 100%;
+    .office {
+        font-size: 30px;
+        font-family: 'Teko', sans-serif;
+    }
+    .offc-add {
+        font-size: 20px;
+        font-family: 'rubik', sans-serif;
+        i {
+            margin-right: 10px;
+            img {
+                width: 18px;
+            }
+        }
+    }
+    &:hover {
+        background-color: #ffffff;
+        color: #222429;
+    }
+}

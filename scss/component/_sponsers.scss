@@ -1,0 +1,89 @@
+.sponsors-sec {
+    .sponsors-head {
+        position: relative;
+        padding: 100px 0px;
+        // background: #1c1e22;
+        text-align: center;
+        color: #ffffff;
+        z-index: 1;
+        &::before {
+            content: ' ';
+            background-color: #5f4c33;
+            opacity: 0.4;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            left: 0;
+            top: 0;
+        }
+        .valuable-client {
+            position: relative;
+            max-width: 870px;
+            margin: 0 auto;
+            img {
+                width: 80px;
+                background: white;
+                border-radius: 50%;
+                padding: 15px;
+            }
+            h2 {
+                font-size: 70px;
+                line-height: 70px;
+                text-transform: uppercase;
+                color: #ffffff;
+                font-weight: 500;
+                margin-bottom: 0px;
+                font-family: 'Teko', sans-serif;
+                span {
+                    color: #ffaa17;
+                }
+            }
+        }
+        .sponsors-bg {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -100;
+            background-image: url(../images/bg3.jpg);
+            filter: brightness(0.6) contrast(1.4);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: cover;
+        }
+    }
+    .sponsors {
+        position: relative;
+        padding: 100px 0;
+        background: #ffffff;
+        .team-img {
+            width: 60%;
+            margin: auto;
+        }
+    }
+    .testimonial {
+        padding: 20px 0;
+        margin-top: 0px;
+    }
+    .owl-dots {
+        text-align: end;
+        margin-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .sponsors-sec {
+        .testimonial {
+            padding: 40px 0;
+            margin-top: 0px;
+        }
+        .owl-dots {
+            text-align: center;
+            margin-right: 30px;
+        }
+    }
+}

@@ -1,0 +1,118 @@
+.counter-sec {
+    overflow: hidden;
+    margin-top: 80px;
+    color: white;
+    z-index: 0;
+    position: relative;
+    padding-bottom: 240px;
+    &::before {
+        background-color: #5f4c33;
+        opacity: 0.4;
+        position: absolute;
+        content: ' ';
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    .container {
+        margin: 0 auto;
+        .main {
+            // display: flex;
+            // justify-content: space-evenly;
+            .counterup {
+                padding: 60px 0px;
+                text-align: center;
+                position: relative;
+                text-transform: uppercase;
+                font-family: Teko, sans-serif;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    left: -0px;
+                    right: -0px;
+                    top: 0;
+                    min-width: 100%;
+                    border-top: 4px solid #ffaa17;
+                    transform: scaleX(0);
+                    transition: all 500ms ease;
+                }
+                &:hover::before {
+                    transform: scaleX(1);
+                }
+                &::after {
+                    position: absolute;
+                    content: "";
+                    right: 0px;
+                    top: 0;
+                    bottom: 40px;
+                    border-right: 1px solid rgba(255, 255, 255, 0.3);
+                }
+                h2 {
+                    font-size: 55px;
+                }
+                h3 {
+                    font-size: 26px;
+                    // width: 60%;
+                    // margin: auto;
+                }
+                &:nth-child(4) {
+                    &::after {
+                        content: "";
+                        border-right: none;
+                    }
+                }
+            }
+        }
+    }
+    .counter-bg {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -100;
+        background-image: url(../images/bg3.jpg);
+        filter: brightness(0.6) contrast(1.4);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .counter-sec {
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .counter-sec {
+        // margin-top: 0px;
+        .container {
+            margin: 0 auto;
+            .main {
+                .counterup {
+                    &:nth-child(2) {
+                        &::after {
+                            content: "";
+                            border-right: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 569px) {
+    .counter-sec {
+        .container {
+            .main {
+                .counterup {
+                    padding: 20px 0px;
+                }
+            }
+        }
+    }
+}

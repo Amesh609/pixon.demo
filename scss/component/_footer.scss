@@ -1,0 +1,117 @@
+footer {
+    padding: 170px 0px 0px 0px;
+    color: #999b9f;
+    background: #222429 url(/images/footer-bg.png) center top no-repeat;
+    ul {
+        li {
+            list-style: none;
+        }
+    }
+    .footer-heading {
+        position: relative;
+        font-size: 24px;
+        font-weight: 500;
+        color: #ffffff;
+        letter-spacing: 0.03em;
+        margin-bottom: 30px;
+        font-family: Teko, sans-serif;
+    }
+    .pizone {
+        .pz-logo {
+            margin-bottom: 26px;
+            img {
+                width: 150px;
+            }
+        }
+        .socl-links {
+            display: flex;
+            a {
+                img {
+                    width: 30px;
+                    &:hover {
+                        filter: invert(0.2);
+                    }
+                }
+            }
+        }
+    }
+    .footer-text {
+        margin: 0 0 30px;
+        font-size: 16px;
+        line-height: 34px;
+        letter-spacing: 0;
+        font-family: Rubik, sans-serif;
+        font-weight: 400;
+    }
+    .contact-detl {
+        .foot-address {
+            display: flex;
+        }
+        span {
+            margin-right: 12px;
+        }
+        p {
+            display: inline-block;
+            margin-bottom: 0;
+        }
+        img {
+            width: 20px;
+        }
+        a {
+            color: #999b9f;
+            text-decoration: none;
+        }
+    }
+    .copyright {
+        padding: 35px 0px;
+        line-height: 30px;
+        color: #999b9f;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    footer {
+        .footer-heading {
+            font-size: 28px;
+            margin-top: 30px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        .container {
+            max-width: 75%;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    footer {
+        text-align: center;
+        .footer-text {
+            margin: 0 0 30px;
+            font-size: 14px;
+            line-height: 30px;
+            letter-spacing: 0;
+            font-family: Rubik, sans-serif;
+            font-weight: 400;
+        }
+        .pizone {
+            .socl-links {
+                display: flex;
+                justify-content: center;
+                img {
+                    width: 24px;
+                    &:hover {
+                        filter: invert(0.2);
+                    }
+                }
+            }
+        }
+    }
+}

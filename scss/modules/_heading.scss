@@ -1,0 +1,118 @@
+.sec-title {
+    margin-bottom: 20px;
+    h2 {
+        position: relative;
+        display: block;
+        font-size: 60px;
+        line-height: 0.9em;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 0px;
+        font-family: 'Teko', sans-serif;
+        .dot {
+            color: #ffaa17;
+            padding-left: 7px;
+        }
+    }
+    .lower-text {
+        position: relative;
+        display: block;
+        font-size: 20px;
+        line-height: 26px;
+        font-weight: 400;
+        color: #999b9f;
+        padding: 30px 0px 0px;
+        font-family: rubik, sans-serif;
+    }
+}
+
+.cuop-heading {
+    font-size: 110px;
+    font-family: teko, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+    line-height: 110px;
+    letter-spacing: 6px;
+    text-align: center;
+}
+
+.details-block {
+    font-family: "teko", sans-serif;
+    color: #1C110A;
+    .title {
+        font-size: 40px;
+        line-height: 40px;
+        padding-bottom: 20px;
+        position: relative;
+        // margin: 20px 0px;
+        font-weight: 600;
+        text-transform: capitalize;
+        letter-spacing: 0.6px;
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 100%;
+            height: 6px;
+            width: 6px;
+            border-radius: 15px;
+            background-color: #ffaa17;
+            -webkit-transition: .2s;
+            transition: .2s;
+        }
+    }
+    .details {
+        font-size: 20px;
+        line-height: 26px;
+        margin-top: 30px;
+        font-family: "rubik", sans-serif;
+        text-align: justify
+    }
+    &:hover {
+        .title {
+            &::after {
+                width: 160px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .cuop-heading {
+        font-size: 60px;
+        transform: rotate(0deg);
+        line-height: 64px;
+        letter-spacing: 2px;
+    }
+    // .details-block {
+    //     text-align: justify;
+    // }
+}
+
+@media only screen and (max-width: 991px) {
+    .sec-title {
+        h2 {
+            font-size: 48px;
+        }
+    }
+    .cuop-heading {
+        font-size: 48px;
+    }
+}
+
+@media only screen and (max-width: 569px) {
+    .sec-title {
+        h2 {
+            font-size: 38px;
+        }
+        .lower-text {
+            font-size: 16px;
+            line-height: 22px;
+            padding: 16px 0px 0px;
+        }
+    }
+    .cuop-heading {
+        font-size: 38px;
+    }
+}

@@ -1,0 +1,87 @@
+.portfolio-section {
+    // margin: 100px;
+    .heading {
+        margin-bottom: 50px;
+        h3 {
+            color: #da7824;
+            font-size: 36px;
+        }
+    }
+    .portfolioFilter {
+        margin-bottom: 10px;
+        a {
+            margin: 0 25px;
+            font-size: 16px;
+            line-height: 24px;
+            font-family: "Franklin Gothic";
+            color: #717171;
+            letter-spacing: 1px;
+            &.current {
+                color: #e57e25;
+            }
+        }
+    }
+    .p-item {
+        padding: 15px;
+        margin: 0;
+        a {
+            position: relative;
+            display: flex;
+            height: 100%;
+            width: 100%;
+        }
+        &:hover {
+            .about-product {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        img {
+            min-height: 310px;
+            width: 100%;
+        }
+    }
+    .product-img {
+        position: absolute;
+        background-size: cover;
+        background-position: top center;
+        top: 0%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        .about-product {
+            background-color: rgba(0, 0, 0, 0.9);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            width: 90%;
+            height: 35%;
+            transform: scale(0.5);
+            transition: .3s;
+            opacity: 0;
+            top: 185px;
+            text-align: center;
+            left: 18px;
+            border-radius: 5px;
+        }
+    }
+    .fluidbox__overlay {
+        background-color: rgba(0, 0, 0, 0.85) !important;
+    }
+}
+
+.portfolio img.logo {
+    height: 357px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio img.logo {
+        height: 457px;
+        object-fit: cover;
+    }
+}

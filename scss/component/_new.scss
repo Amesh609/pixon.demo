@@ -1,0 +1,23 @@
+.new {
+    padding: 80px 0;
+    background-color: #f4f5f8;
+    .text-col {
+        background-color: #f4f5f8;
+        &::before {
+            content: ' ';
+            display: none;
+        }
+    }
+}
+
+.portfolio {
+    .sec-title {
+        h2 {
+            color: #E57E25;
+        }
+    }
+}
+
+/ .innovative-sec {
+    margin: 80px 0;
+}
