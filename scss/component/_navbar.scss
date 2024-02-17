@@ -8,9 +8,11 @@
         top: 0;
         width: 100%;
         transition: all ease 0.2s;
+
         .inner-nav-content {
             ul {
                 li {
+                    position: relative;
                     a {
                         font-size: 22px;
                         margin-right: 30px;
@@ -24,6 +26,7 @@
                         font-family: 'Teko';
                         position: relative;
                         transition: .5s;
+
                         &::before {
                             content: "";
                             position: absolute;
@@ -35,6 +38,7 @@
                             top: 100%;
                             transition: .5s;
                         }
+
                         &.active {
                             &::before {
                                 content: "";
@@ -48,6 +52,7 @@
                                 transition: .5s;
                             }
                         }
+
                         &:hover {
                             &::before {
                                 content: "";
@@ -62,20 +67,48 @@
                             }
                         }
                     }
+
+                    .navoptions {
+                        display: none;
+                        padding: 0px 20px;
+                        background-color: rgba(255, 255, 255, 0.6);
+                        color: black;
+                        list-style: none;
+                        backdrop-filter: blur(4px);
+                        border-radius: 8px;
+                        position: absolute;
+                        top: 110%;
+                        width: 160px;
+                        a{
+                            margin: 0px;
+                            color: #222429;
+                        }
+                    }
+
+                    &:hover {
+                        .navoptions {
+                            display: inline-block;
+                        }
+                    }
+
                 }
             }
         }
+
         &.filled {
             background-color: #222429;
             top: 0;
             padding: 20px 60px;
             border-bottom: 2px solid #ffffff40;
+
             .landing-btns {
                 button {
                     background-color: white;
+
                     i {
                         background-color: #ffaa17;
                     }
+
                     &:hover {
                         i {
                             background-color: #ffaa17;
@@ -97,6 +130,7 @@
     .header-upper {
         .nav-inner {
             padding: 20px 40px;
+
             &.filled {
                 padding: 20px 40px;
             }
@@ -108,15 +142,18 @@
     .header-upper {
         .nav-inner {
             background-color: #222429;
+
             .navbar-brand {
                 img {
                     width: 80%;
                 }
             }
+
             .navbar-toggler {
                 font-size: 0.85rem;
             }
         }
+
         .landing-btns {
             margin-top: 20px;
         }
@@ -127,11 +164,13 @@
     .header-upper {
         .nav-inner {
             padding: 20px 20px;
+
             .navbar-brand {
                 img {
                     width: 60%;
                 }
             }
+
             &.filled {
                 padding: 20px 20px;
             }
