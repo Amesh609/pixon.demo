@@ -1605,6 +1605,9 @@ footer .copyright {
     filter: invert(0.2);
   }
 }
+.header-upper .navbar-brand {
+  color: #ffaa17;
+}
 .header-upper .nav-inner {
   background-color: transparent;
   z-index: 10000;
