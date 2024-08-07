@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38.621" height="20.243" viewBox="0 0 38.621 20.243">
+  <g id="Component_1_2" data-name="Component 1 – 2" transform="translate(1.5 2.121)">
+    <line id="Line_1" data-name="Line 1" x2="35" transform="translate(0 8)" fill="none" stroke="#00259e" stroke-linecap="round" stroke-width="3"/>
+    <line id="Line_2" data-name="Line 2" x2="8" y2="8" transform="translate(27)" fill="none" stroke="#00259e" stroke-linecap="round" stroke-width="3"/>
+    <line id="Line_3" data-name="Line 3" y1="8" x2="8" transform="translate(27 8)" fill="none" stroke="#00259e" stroke-linecap="round" stroke-width="3"/>
+  </g>
+</svg>

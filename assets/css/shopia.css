@@ -1,0 +1,244 @@
+.custmize-nav {
+    background-color: rgb(242, 242, 242);
+    padding: 0px;
+}
+
+.custmize-nav a {
+    color: black !important;
+    ;
+}
+
+/*#collapsibleNavbar li{
+    border-left: 1px solid;   
+}*/
+li.nav-item {
+    padding: 0 20px;
+    position: relative;
+}
+
+.piller::after {
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 1px;
+    top: 13px;
+    left: 0;
+    border: 6px;
+    background-color: black;
+}
+
+li#no-border::after {
+    width: 0;
+}
+
+.left-menu {
+    text-align: center;
+}
+
+.menu-col {
+    display: flex;
+    font-style: italic;
+    font-size: 20px;
+}
+.menu-col a {
+    color: inherit;
+}
+
+.upper-button {
+    background-color: black;
+    color: white;
+    border: 0px;
+}
+
+.handpicked {
+    padding-left: 45%;
+    font-style: italic;
+}
+
+.handpicked::after {
+    content: '';
+    width: 25%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    opacity: 10%;
+}
+
+.handpicked::before {
+    content: '';
+    width: 25%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    opacity: 10%;
+}
+
+a.btn.shopnowbtn {
+    position: absolute;
+    right: 35%;
+    bottom: 30px;
+    color: white;
+    background-color: rgb(240, 151, 93);
+
+
+}
+
+img.btnicon {
+    position: absolute;
+    width: 20%;
+    right: 45%;
+    top: 100px;
+}
+
+.sale1 {
+    position: absolute;
+    left: 4%;
+    top: 8%;
+}
+
+.sale1 img {
+    width: 68px;
+}
+
+.trapezoid {
+    width: 155px;
+    text-align: center;
+    height: 0;
+    position: absolute;
+    border-right: 40px solid transparent;
+    border-bottom: 40px solid #f0975d;
+    border-left: 40px solid transparent;
+    box-sizing: content-box;
+    left: 25px;
+    top: 254px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.backgroundimg {
+    background-image: url(../shopiaImages/extra/review.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.writeabout {
+    margin-top: 100px
+}
+
+.form-control {
+    background: black;
+    border-radius: 0;
+}
+
+.btn {
+    border-radius: 0;
+    color: #fff;
+    border: 1px solid;
+    border-left: 0;
+}
+
+li {
+    padding: 0 !important;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.dropdown-menu li a{
+    padding: 6px 16px;
+    text-decoration: none;
+    background-color: transparent;
+}
+.dropdown-menu li:hover a   {
+    background-color: #F2F2F2;
+}
+@media only screen and (max-width: 1200px) {
+    .trapezoid {
+        width: 110px;
+        position: absolute;
+        border-right: 40px solid transparent;
+        border-bottom: 40px solid #f0975d;
+        border-left: 40px solid transparent;
+        box-sizing: content-box;
+        left: 20px;
+        top: 200px;
+        font-size: 14px;
+    }
+
+    .sale1 {
+        position: absolute;
+        left: 3%;
+        top: 5%;
+    }
+
+    .sale1 img {
+        width: 48px;
+    }
+
+    .backgroundimg {
+        background-image: unset;
+        background-color: #d9bf8f;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .handpicked {
+        padding-left: 39%;
+        font-style: italic;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .trapezoid {
+        top: 220px;
+        width: 132px;
+    }
+
+    .handpicked {
+        padding-left: 36%;
+        font-style: italic;
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    .home-nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .handpicked {
+        padding-left: inherit;
+        font-style: italic;
+        max-width: fit-content;
+        margin: auto;
+    }
+
+    .handpicked::after {
+        display: none;
+    }
+
+    .handpicked::before {
+        display: none;
+    }
+
+    footer h5 {
+        font-size: 14px;
+    }
+
+    .summer-collection {
+        width: fit-content;
+        margin: auto;
+        position: relative;
+    }
+
+    .trapezoid {
+        top: 298px;
+        max-width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+}
