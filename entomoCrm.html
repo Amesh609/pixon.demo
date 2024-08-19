@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Task of entomo</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/media/brandIcon.svg">
+
+    <!-- Css StyleSheet link -->
+    <link rel="stylesheet" href="./assets/css/entomoStyle.css">
+
+</head>
+
+<body>
+    <!-- begin :: header -->
+    <header class="top-header flex-between">
+        <a href="#" class="navbrand">
+            <img src="./assets/media/brand.svg" alt="Brand Logo">
+        </a>
+
+        <div class="header-menu flex-between gap-sm-4 gap-2">
+            <div class="dropdown dhover language">
+                <a href="#" class="icon-bg dropdown-toggle" data-bs-toggle="dropdown">
+                    <i class="icomoon-translate"></i>
+                </a>
+                <ul class="dropdown-menu end-0">
+                    <li><a class="dropdown-item" href="#">Hindi</a></li>
+                    <li><a class="dropdown-item" href="#">Eng (US)</a></li>
+                    <li><a class="dropdown-item" href="#">Eng (UK)</a></li>
+                    <li><a class="dropdown-item" href="#">Dutch</a></li>
+                    <li><a class="dropdown-item" href="#">Spanish</a></li>
+                    <li><a class="dropdown-item" href="#">Russia</a></li>
+                </ul>
+            </div>
+            <div class="dropdown dhover notification">
+                <a href="#" class="icon-bg position-relative notifi-icon dropdown-toggle" data-bs-toggle="dropdown">
+                    <i class="icomoon-dot status active"></i>
+                    <i class="icomoon-notification"></i>
+                </a>
+                <div class="dropdown-menu end-0">
+                    <div class="title-wrap flex-between py-3">
+                        <h3 class="title mb-0">Notifications</h3>
+                        <a href="#">Mark all as read</a>
+                    </div>
+                    <ul class="custom-notifications">
+                        <li class="unread">
+                            <a href="#" class="d-flex">
+                                <div class="me-3">
+                                    <img src="./assets/media/person_1.png" alt="Image">
+                                </div>
+                                <div class="text">
+                                    <strong class="text-black">Claudia Gideon</strong> marked the task done a day ago
+                                </div>
+                            </a>
+                        </li>
+                        <li class="unread">
+                            <a href="#" class="d-flex">
+                                <div class="me-3">
+                                    <img src="./assets/media/person_2.png" alt="Image">
+                                </div>
+                                <div class="text">
+                                    <strong>Alex Stafford</strong> marked the task done a day ago
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex">
+                                <div class="me-3">
+                                    <img src="./assets/media/person_3.png" alt="Image">
+                                </div>
+                                <div class="text">
+                                    <strong>Devin Richards</strong> mentioned you in her comment on Invoices 2 days ago
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex">
+                                <div class="me-3">
+                                    <img src="./assets/media/person_1.png" alt="Image">
+                                </div>
+                                <div class="text">
+                                    <strong>Alex Stafford</strong> marked the task done a day ago
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex">
+                                <div class="me-3">
+                                    <img src="./assets/media/person_2.png" alt="Image">
+                                </div>
+                                <div class="text">
+                                    <strong>Devin Richards</strong> mentioned you in her comment on Invoices 2 days ago
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="btn view-btn">View All</button>
+
+                </div>
+            </div>
+            <div class="dropdown dhover user-profile ">
+                <a href="#" class="user-icon px-1 flex-between dropdown-toggle" data-bs-toggle="dropdown">
+                    <span class="icon-bg text-uppercase">Us</span>
+                    <span class="ps-2 pe-1 d-none d-sm-block">User</span>
+                    <i class="icomoon-chevronDown fs20 mt-1 d-none d-sm-block"></i>
+                </a>
+
+                <div class="dropdown-menu end-0">
+                    <div class=" dropdown-header noti-title">
+                        <h6 class="text-overflow m-0 fw-bold text-black">Welcome!</h6>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <ul>
+                        <li>
+                            <a href="../examples/profile.html" class="dropdown-item">
+                                <i class="ni ni-single-02"></i>
+                                <span>My profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../examples/profile.html" class="dropdown-item">
+                                <i class="ni ni-settings-gear-65"></i>
+                                <span>Settings</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../examples/profile.html" class="dropdown-item">
+                                <i class="ni ni-calendar-grid-58"></i>
+                                <span>Activity</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../examples/profile.html" class="dropdown-item">
+                                <i class="ni ni-support-16"></i>
+                                <span>Support</span>
+                            </a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <a href="#!" class="dropdown-item">
+                                <i class="ni ni-user-run"></i>
+                                <span>Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <button class="icon-bg hamburger d-md-none d-block" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#sidebar"><i class="icomoon-menu"></i></button>
+
+        </div>
+    </header>
+    <!-- end :: header -->
+
+    <!-- begin :: aside -->
+    <aside class="sidebar">
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" id="sidebar">
+            <button type="button" class="btn-close offcanvas-close d-md-none" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            <div class="d-flex flex-column justify-content-between offcanvas-body overflow-hidden px-0 py-2">
+                <ul class="nav flex-column sidebar-menu">
+                    <li class="nav-item">
+                        <a class="nav-link collapsed active" data-bs-toggle="collapse" href="#sideSubeMenu1">
+                            <i class="mainicon icomoon-home"></i>
+                            <span class="linkName">Entomo</span>
+                            <i class="icomoon-chevronDown up ms-auto"></i>
+                        </a>
+                        <ul class="sub-menu collapse" id="sideSubeMenu1">
+                            <li><a href="./index.html" class="d-block">Pixon</a></li>
+                            <li><a href="./facelift.html" class="d-block">FaceLift</a></li>
+                            <li><a href="./shopia.html" class="d-block">Shopia</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="mainicon icomoon-chart"></i>
+                            <span class="linkName">Links</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="mainicon icomoon-network"><span class="path1"></span><span
+                                    class="path2"></span><span class="path3"></span><span class="path4"></span><span
+                                    class="path5"></span><span class="path6"></span><span class="path7"></span>
+                            </span>
+                            <span class="linkName">Links</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="mainicon icomoon-userNetwork"></i>
+                            <span class="linkName">Links</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class=" mainicon icomoon-cubes"></i>
+                            <span class="linkName">Links</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="mainicon icomoon-fourUsershare"></i>
+                            <span class="linkName">Links</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav flex-column sidebar-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="mainicon icomoon-switch-position"></i>
+                            <span class="linkName">Links</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="mainicon icomoon-statics"></i>
+                            <span class="linkName">Links</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <!-- end :: aside -->
+
+    <!-- begin :: main -->
+    <div class="main">
+        <section class="dashboard">
+            <div class="dashboard-left">
+                <div class="dash-header flex-between flex-wrap">
+                    <div>
+                        <h3>Good Afternoon, User</h3>
+                        <p>Every step counts, Keep up the journey!</p>
+                    </div>
+                    <button class="btn btns flex-between d-lg-none d-flex" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#toDo">Things To Do
+                    </button>
+                </div>
+
+                <!-- begin :: cards carousel -->
+                <div class="progress-cards mt-8 mb-6">
+                    <div class="owl-carousel owl-theme nav-rounded">
+                        <div class="cards">
+                            <div class="row align-items-center">
+                                <div class="col-9">
+                                    <h6 class="fw-bold">Workwise. Ai Unleashed</h6>
+                                    <p class="fw-medium mb-4 ellipsis-on3">Your intelligentally for everything, form
+                                        career leaps
+                                        to personal
+                                        well-being!</p>
+                                </div>
+                                <div class="col-3 cardbg">
+
+                                </div>
+                            </div>
+                            <button class="btn btn-full">Explore
+                                Now</button>
+                        </div>
+                        <div class="cards gradiant-yellow">
+                            <div>
+                                <h6 class="fw-bold">Role Health</h6>
+                                <p class="fs-5 mb-2 fw-medium">b2c product owner</p>
+                                <h4 class="fw-bold">50%</h4>
+                            </div>
+
+                            <button class="btn btn-link">
+                                Self assess <i class="icomoon-edit"></i>
+                            </button>
+                        </div>
+                        <div class="cards gradiant-pink">
+
+                            <div>
+                                <h6 class="fw-bold">Role Health</h6>
+                                <h6 class="fs-5 mb-2 fw-medium">How are feeling today?</h6>
+                            </div>
+                            <button class="btn btn-link">Take 2 min joy test <i class="icomoon-pencil"></i>
+                            </button>
+                        </div>
+                        <div class="cards gradiant-green">
+                            <div>
+                                <h6 class="fw-bold">Workwise. Ai Unleashed</h6>
+                                <p class="fw-medium mb-4">Your intelligentally for everything, form career leaps
+                                    to personal
+                                    well-being!</p>
+                            </div>
+                            <button class="btn btn-link">
+                                Self assess <i class="icomoon-edit"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- end :: cards carousel -->
+
+                <!-- begin :: tabs section -->
+                <div class="dash-profile-menu">
+                    <!-- begin :: tabs nav menus -->
+                    <ul class="nav nav-pills" id="pills-tabl" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link me-3" id="focsed-tab" data-bs-toggle="tab"
+                                data-bs-target="#focuesdTab" type="button">Focsed</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link mx-3 active" id="feed-tab" data-bs-toggle="tab"
+                                data-bs-target="#feedTab">Feed</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link mx-3" id="contact-tab" data-bs-toggle="tab"
+                                data-bs-target="#moreTab">Contact</button>
+                        </li>
+                    </ul>
+                    <!-- end :: tabs nav menus -->
+
+                    <!-- begin :: tabs  -->
+                    <div class="d-flex align-items-center justify-content-end my-3">
+                        <a href="#" class="icon-bg square me-3">
+                            <i class="icomoon-filter"></i>
+                        </a>
+                        <a href="#" class="icon-bg square">
+                            <i class="icomoon-filterTwo"></i>
+                        </a>
+                    </div>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade" id="focuesdTab" tabindex="0">
+                            <h2 class="fw-bold"> Content Not Provided</h2>
+                        </div>
+                        <div class="tab-pane fade show active" id="feedTab" tabindex="0">
+                            <div class="feeds mb-sm-5 mb-4">
+                                <div class="flex-between mb-3">
+                                    <div class="pin">
+                                        <i class="icomoon-pinned"> </i>
+                                        Pinned
+                                    </div>
+                                    <a href="#" class="feeds-menu">
+                                        <i class="icomoon-threeDotsVertical"></i>
+                                    </a>
+                                </div>
+                                <div class="announcement d-flex gap-3 align-items-center my-2">
+                                    <div class="userbg">US</div>
+                                    <div class="">
+                                        <h6 class="fw-bold mb-1">Announcement by ct_role_skill_based_it_ntuc.</h6>
+                                        <p class="dateTime">15 Feb 2024, 3:56 Pm</p>
+                                    </div>
+                                </div>
+                                <div class="my-4">
+                                    <h5 class="msg fw-bold">AAAAAAYY</h5>
+                                    <p class="msg-description fw-medium">GHJ</p>
+                                </div>
+                                <div class="d-flex align-items-center gap-sm-5 gap-2 fw-bold">
+                                    <div class="like d-flex align-items-center">
+                                        <i class="icomoon-likeHeart me-2"></i> Likes
+                                    </div>
+                                    <div class="comment d-flex align-items-center">
+                                        <i class="icomoon-comment me-2"></i> Comments
+                                    </div>
+                                    <div class="share d-flex align-items-center">
+                                        <i class="icomoon-shares me-2"></i> Share
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feeds mb-sm-5 mb-4">
+                                <div class="flex-between mb-3">
+                                    <div class="pin">
+                                        <i class="icomoon-pinned"> </i>
+                                        Pinned
+                                    </div>
+                                    <a href="#" class="feeds-menu">
+                                        <i class="icomoon-threeDotsVertical"></i>
+                                    </a>
+                                </div>
+                                <div class="announcement d-flex gap-3 align-items-center my-2">
+                                    <div class="userbg">US</div>
+                                    <div class="">
+                                        <h6 class="fw-bold mb-1">Announcement by ct_role_skill_based_it_ntuc.</h6>
+                                        <p class="dateTime">15 Feb 2024, 3:56 Pm</p>
+                                    </div>
+                                </div>
+                                <div class="my-4">
+                                    <h5 class="msg fw-bold">AAAAAAYY</h5>
+                                    <p class="msg-description fw-medium">GHJ</p>
+                                </div>
+                                <div class="d-flex align-items-center gap-sm-5 gap-2 fw-bold">
+                                    <div class="like d-flex align-items-center">
+                                        <i class="icomoon-likeHeart me-2"></i> Likes
+                                    </div>
+                                    <div class="comment d-flex align-items-center">
+                                        <i class="icomoon-comment me-2"></i> Comments
+                                    </div>
+                                    <div class="share d-flex align-items-center">
+                                        <i class="icomoon-shares me-2"></i> Share
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feeds mb-sm-5 mb-4">
+                                <div class="flex-between mb-3">
+                                    <div class="pin">
+                                        <i class="icomoon-pinned"> </i>
+                                        Pinned
+                                    </div>
+                                    <a href="#" class="feeds-menu">
+                                        <i class="icomoon-threeDotsVertical"></i>
+                                    </a>
+                                </div>
+                                <div class="announcement d-flex gap-3 align-items-center my-2">
+                                    <div class="userbg">US</div>
+                                    <div class="">
+                                        <h6 class="fw-bold mb-1">Announcement by ct_role_skill_based_it_ntuc.</h6>
+                                        <p class="dateTime">15 Feb 2024, 3:56 Pm</p>
+                                    </div>
+                                </div>
+                                <div class="my-4">
+                                    <h5 class="msg fw-bold">AAAAAAYY</h5>
+                                    <p class="msg-description fw-medium">GHJ</p>
+                                </div>
+                                <div class="d-flex align-items-center gap-sm-5 gap-2 fw-bold">
+                                    <div class="like d-flex align-items-center">
+                                        <i class="icomoon-likeHeart me-2"></i> Likes
+                                    </div>
+                                    <div class="comment d-flex align-items-center">
+                                        <i class="icomoon-comment me-2"></i> Comments
+                                    </div>
+                                    <div class="share d-flex align-items-center">
+                                        <i class="icomoon-shares me-2"></i> Share
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feeds mb-sm-5 mb-4">
+                                <div class="flex-between mb-3">
+                                    <div class="pin">
+                                        <i class="icomoon-pinned"> </i>
+                                        Pinned
+                                    </div>
+                                    <a href="#" class="feeds-menu">
+                                        <i class="icomoon-threeDotsVertical"></i>
+                                    </a>
+                                </div>
+                                <div class="announcement d-flex gap-3 align-items-center my-2">
+                                    <div class="userbg">US</div>
+                                    <div class="">
+                                        <h6 class="fw-bold mb-1">Announcement by ct_role_skill_based_it_ntuc.</h6>
+                                        <p class="dateTime">15 Feb 2024, 3:56 Pm</p>
+                                    </div>
+                                </div>
+                                <div class="my-4">
+                                    <h5 class="msg fw-bold">AAAAAAYY</h5>
+                                    <p class="msg-description fw-medium">GHJ</p>
+                                </div>
+                                <div class="d-flex align-items-center gap-sm-5 gap-2 fw-bold">
+                                    <div class="like d-flex align-items-center">
+                                        <i class="icomoon-likeHeart me-2"></i> Likes
+                                    </div>
+                                    <div class="comment d-flex align-items-center">
+                                        <i class="icomoon-comment me-2"></i> Comments
+                                    </div>
+                                    <div class="share d-flex align-items-center">
+                                        <i class="icomoon-shares me-2"></i> Share
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="moreTab" tabindex="0">
+                            <h2 class="fw-bold"> Content Not Provided</h2>
+                        </div>
+                    </div>
+                    <!-- end :: tabs  -->
+                </div>
+                <!-- end :: tabs section -->
+            </div>
+
+            <div class="dashboard-right">
+                <div class="offcanvas-lg offcanvas-end" data-bs-scroll="false" data-bs-backdrop="true" tabindex="-1"
+                    id="toDo">
+                    <button type="button" class="btn-close offcanvas-close d-md-none" data-bs-toggle="offcanvas" data-bs-target="#toDo"></button>
+                    <div class="offcanvas-header fw-semibold">
+                        <h3>Things to do</h3>
+                        <a href="#" class="icon-bg square ms-auto">
+                            <i class="icomoon-filter"></i>
+                        </a>
+                    </div>
+                    <div class="offcanvas-body overflow-hidden p-0">
+                        <ul class="to-do">
+                            <li class="">
+                                <p class="pb-1"><small class="date">15 Feb 2024, </small><small class="time">4:31
+                                        PM</small></p>
+                                <p class="description">
+                                    ct_role_skill_based_It_ntuc update your checkin for the kr1 Key result for the
+                                    period 2024-01-01 to 2024-12-31
+                                </p>
+                                <a href="#" class="btn btn-border ms-auto my-3">Check-in key result progress</a>
+                            </li>
+                            <li class="pt-4">
+                                <p class="pb-1"><small class="date">14 Feb 2024, </small><small class="time">10:43
+                                        AM</small></p>
+                                <p class="description">
+                                    09Aug has created the performance program hi22 for the period 2019-02-01 to
+                                    2024-02-29. Start creating your Goals!
+                                </p>
+                                <a href="#" class="btn btn-border ms-auto my-3">Create Goal Sheet</a>
+                            </li>
+                            <li class="pt-4">
+                                <p class="pb-1"><small class="date">12 Feb 2024, </small><small class="time">6:08
+                                        PM</small></p>
+                                <p class="description">
+                                    Your Goal Sheet published for the program P TEST1 for the period 2023-01-01 to
+                                    2023-12-31
+                                </p>
+                                <a href="#" class="btn btn-border ms-auto my-3">Push Goals</a>
+                            </li>
+                            <li class="pt-4">
+                                <p class="pb-1"><small class="date">12 Feb 2024, </small><small class="time">6:08
+                                        PM</small></p>
+                                <p class="description">
+                                    Update Your Performance for P TEST1 for December 2024-01-01 to 2024-12-31
+                                </p>
+                                <a href="#" class="btn btn-border ms-auto my-3">Create Goal Sheet</a>
+                            </li>
+                            <li class="pt-4">
+                                <p class="pb-1"><small class="date">15 Feb 2024, </small><small class="time">4:31
+                                        PM</small></p>
+                                <p class="description">
+                                    ct_role_skill_based_It_ntuc update your checkin for the kr1 Key result for the
+                                    period 2024-01-01 to 2024-12-31
+                                </p>
+                                <a href="#" class="btn btn-border ms-auto my-3">Check-in key result progress</a>
+                            </li>
+                            <li class="pt-4">
+                                <p class="pb-1"><small class="date">12 Feb 2024, </small><small class="time">6:08
+                                        PM</small></p>
+                                <p class="description">
+                                    Your Goal Sheet published for the program P TEST1 for the period 2023-01-01 to
+                                    2023-12-31
+                                </p>
+                                <a href="#" class="btn btn-border ms-auto my-3">Push Goals</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- end :: main -->
+
+
+    <!-- jquery -->
+    <script src="./assets/javascript/jquery.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="./assets/javascript/bootstrap.bundle.min.js"></script>
+
+    <!-- owl carousel -->
+    <script src="./assets/javascript/owl.carousel.min.js"></script>
+
+    <!-- carousel's javascript -->
+    <script src="./assets/javascript/carousel.js"></script>
+
+</body>
+
+</html>

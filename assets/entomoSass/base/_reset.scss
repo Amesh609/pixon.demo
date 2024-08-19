@@ -1,0 +1,47 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: normal;
+    font-family: $quicksand;
+    color: $black;
+    overflow-x: hidden; 
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+.btn-close,.btn {
+    border: 0px;
+    &:where(:focus, :focus-visible, :active) {
+        outline: unset !important;
+        box-shadow: unset !important;
+        border: 0px !important;
+    }
+}
+
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.accordion-button,
+.form-control {
+    &:focus {
+        line-height: 1.2;
+        box-shadow: unset;
+        outline: unset;
+    }
+}

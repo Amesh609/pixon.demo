@@ -1,0 +1,155 @@
+// Begin :: max:1200
+@media only screen and (max-width: 1200px) {
+    .btn-border {
+        font-size: 14px;
+    }
+
+    .navbrand {
+        max-width: 150px;
+    }
+}
+
+// End :: max:1200
+
+// Begin :: max:991
+@media only screen and (max-width: 991.98px) {
+    .dashboard {
+        .dashboard-left {
+            width: 100%;
+        }
+
+        .dashboard-right {
+            .offcanvas-lg {
+                width: 400px;
+                max-width: 100%;
+                top: 0;
+                padding: 20px 16px;
+            }
+
+            .to-do {
+                height: calc(100vh - 60px);
+            }
+        }
+    }
+}
+
+// end :: max:991
+
+// Begin :: max:769
+@media only screen and (max-width: 769px) {
+    .main {
+        margin: 0px;
+    }
+
+    .sidebar {
+        .offcanvas {
+            transform: translateX(-100%);
+            z-index: 1045;
+        }
+    }
+
+    .offcanvas-close {
+        position: absolute;
+        top: 6px;
+        right: 20px;
+        font-size: 10px;
+    }
+}
+
+// End :: max:769
+
+@media (max-width: 576px) {
+    html {
+        font-size: 14px;
+    }
+
+    .navbrand {
+        max-width: 120px;
+    }
+
+    .top-header {
+        padding: 12px 16px;
+    }
+
+    .header-menu {
+        .user-profile {
+            &:hover {
+                .user-icon {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+
+    .icon-bg {
+        font-size: 16px;
+    }
+
+
+    .dashboard {
+        .dashboard-left {
+            padding: 24px 16px;
+        }
+
+        .dash-profile-menu {
+            .feeds {
+                padding: 12px 14px;
+                border-radius: 8px;
+            }
+        }
+
+        .dashboard-right {
+            .offcanvas-lg {
+                max-width: 90%;
+                padding: 30px 12px 12px;
+            }
+        }
+    }
+
+    .announcement {
+        h6 {
+            word-break: break-word;
+        }
+    }
+
+    .like,
+    .comment,
+    .share {
+        font-size: 14px;
+        margin-right: 6px;
+
+        i {
+            font-size: 12px;
+        }
+    }
+
+    .notification {
+        .dropdown-menu {
+            max-width: 250px;
+
+            .custom-notifications {
+                li {
+                    a {
+                        padding: 8px;
+                        font-size: 14px;
+
+                        img {
+                            width: 100px;
+                        }
+                    }
+                }
+            }
+
+            .title-wrap {
+                h3 {
+                    font-size: 14px;
+                }
+
+                a {
+                    font-size: 12px;
+                }
+            }
+        }
+
+    }
+}

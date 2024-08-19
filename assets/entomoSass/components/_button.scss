@@ -1,0 +1,61 @@
+.btn-link {
+    text-align: right;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    font-weight: 700;
+}
+
+.btn-full {
+    width: 100%;
+    background-color: $white;
+    font-weight: 700;
+
+    &:hover {
+        background-color: $offWhite;
+    }
+}
+
+.btn-border {
+    color: $primary;
+    padding: 4px 12px;
+    background-color: transparent;
+    border: 1px solid $primary;
+    border-radius: 6px;
+    font-weight: 600;
+    width: fit-content;
+    display: block;
+
+    &:hover {
+        color: $black;
+        border: 1px solid $black;
+    }
+}
+
+.view-btn{
+    font-weight: 700;
+    display: block;
+    margin: 12px auto 0px;
+    padding: 0px;
+    &:hover{
+        color: $primary;
+    }
+}
+
+.like,.comment,.share{
+    cursor: pointer;
+    &:hover{
+        color: $primary;
+    }
+}
+
+.btns{
+    font-weight: 700;
+    font-size: 14px;
+    margin: 14px 0px;
+    background-color: $offWhite;
+    color: $black;
+    &:hover{
+        background-color: $lightBlue;
+    }
+}

@@ -1,0 +1,167 @@
+.dashboard {
+    display: flex;
+
+    .dashboard-left {
+        padding: 30px 20px 20px;
+        width: 70%;
+
+        .dash-header {
+            font-weight: 600;
+
+            p {
+                color: $lightText;
+            }
+        }
+    }
+
+    .progress-cards {
+
+        .cards {
+            background-image: url('../media/workWithAi.png');
+            // background-image: url('../media/workWithAi1.png');
+            // background-image: url('../media/workWithA2.png');
+            background-position: 95% 22%;
+            background-size: 26%;
+            background-repeat: no-repeat;
+            background-color: $yellow-300;
+            padding: 16px 12px;
+            border-radius: 12px;
+            min-height: 170px;
+            @include flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            &.gradiant-yellow {
+                background-image: conic-gradient(from 150deg at 50% 50%, #FCE6B5 0%, #FFFFFF 100%);
+                background-size: 100% 100%;
+                background-position: 0px 0px;
+            }
+
+            &.gradiant-pink {
+                background-image: conic-gradient(from 150deg at 50% 50%, #FDD7D4 0%, #FFFFFF 100%);
+                background-size: 100% 100%;
+                background-position: 0px 0px;
+            }
+
+            &.gradiant-green {
+                background-image: conic-gradient(from 150deg at 50% 50%, #ffffff 0%, #DFF9CEFF 100%);
+                background-size: 100% 100%;
+                background-position: 0px 0px;
+            }
+        }
+    }
+
+    .nav-pills {
+        font-weight: 700;
+        --bs-nav-pills-link-active-color: $black;
+        --bs-nav-pills-link-active-bg: $primary;
+    }
+
+    .dashboard-right {
+        flex: 1 1 auto;
+        .offcanvas-lg{
+            position: fixed;
+            right: 0px;
+            bottom: 0;
+            padding: 30px 16px;
+            width: 28%;
+            top: 70px;
+            background-color: #F9FAFC;
+            border-left: 2px solid $offWhite;
+        }
+        .offcanvas-header{
+            padding: 0px;
+            display: flex;
+        }
+        .to-do {
+            height: calc(100vh - 150px);
+            overflow-y: auto;
+            padding: 12px 12px 12px 0px;
+            font-weight: 600;
+
+            li {
+                border-bottom: 1px solid $darkBorders;
+
+                .date,
+                .time {
+                    color: $lightText;
+                }
+            }
+        }
+    }
+
+    .dash-profile-menu {
+        .nav-pills {
+
+
+            .show {
+                >.nav-link {
+                    color: $black;
+                    border-bottom: 2px solid;
+                }
+            }
+
+            .nav-link {
+                color: $lightText;
+                border-radius: unset;
+                padding: 0px 0px 2px;
+
+                &.active,
+                &:hover {
+                    color: $black;
+                    border-bottom: 1px solid;
+                }
+            }
+        }
+
+
+        .feeds {
+            padding: 16px 20px;
+            border: 2px solid $offWhite;
+            border-radius: 12px;
+
+            .pin {
+                user-select: none;
+                background-color: $lightBlue;
+                padding: 2px 8px;
+                font-weight: 500;
+                border-radius: 40px;
+
+            }
+
+            .feeds-menu {
+                border-radius: 20px;
+                cursor: pointer;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: ease-out 0.2s;
+
+                &:hover {
+                    background-color: $lightBlue;
+                }
+            }
+
+            .announcement {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                .userbg {
+                    font-weight: 700;
+                    padding: 10px 11px;
+                    background-color: $offWhite;
+                    display: inline-block;
+                    border-radius: 20px;
+                }
+
+                p {
+                    color: $lightText;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

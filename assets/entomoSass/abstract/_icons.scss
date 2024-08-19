@@ -1,0 +1,168 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon/icomoon.eot?1qcwu5');
+  src:  url('../fonts/icomoon/icomoon.eot?1qcwu5#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.ttf?1qcwu5') format('truetype'),
+    url('../fonts/icomoon/icomoon.woff?1qcwu5') format('woff'),
+    url('../fonts/icomoon/icomoon.svg?1qcwu5#icomoon') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: block;
+}
+
+
+[class^="icomoon-"], [class*=" icomoon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icomoon-candidate-comparison:before {
+  content: "\e900";
+  filter: drop-shadow(0px 0px 0px black);
+}
+.icomoon-chart:before {
+  content: "\e901";
+}
+.icomoon-chevronDown:before {
+  content: "\e902";
+  filter: drop-shadow(0px 0px 0px black);
+}
+.icomoon-chevronDown:before { 
+  &.up{
+    transform: rotate(180deg);
+  }
+}
+.icomoon-chevronDownFill:before {
+  content: "\e903";
+}
+.icomoon-chevronRoundLeft:before {
+  content: "\e904";
+}
+.icomoon-chevronRoundRight:before {
+  content: "\e905";
+}
+.icomoon-comment:before {
+  content: "\e906";
+  filter: drop-shadow(0px 0px 0px black);
+}
+.icomoon-cubes:before {
+  content: "\e907";
+}
+.icomoon-dot:before {
+  content: "\e908";
+}
+.icomoon-edit:before {
+  content: "\e909";
+  filter: drop-shadow(0px 0px 0px black);
+}
+.icomoon-filter:before {
+  content: "\e90a";
+  filter: drop-shadow(0px 0px 0px black);
+}
+.icomoon-filterTwo:before {
+  content: "\e90b";
+  filter: drop-shadow(0px 0px 0px black);
+}
+.icomoon-fourUsershare:before {
+  content: "\e90c";
+  filter: drop-shadow(0px 0px 0px black);
+}
+.icomoon-home:before {
+  content: "\e90d";
+  filter: drop-shadow(0px 0px 0px black);
+}
+.icomoon-language:before {
+  content: "\e90e";
+}
+.icomoon-likeHeart:before {
+  content: "\e90f";
+  filter: drop-shadow(0px 0px 0px black);
+}
+.icomoon-menu:before {
+  content: "\e910";
+}
+.icomoon-network .path1:before {
+  content: "\e911";
+  filter: drop-shadow(0px 0px 0px black);
+}
+.icomoon-network .path2:before {
+  content: "\e912";
+  margin-left: -1em;
+  filter: drop-shadow(0px 0px 0px black);
+}
+.icomoon-network .path3:before {
+  content: "\e913";
+  margin-left: -1em;
+  filter: drop-shadow(0px 0px 0px black);
+}
+.icomoon-network .path4:before {
+  content: "\e914";
+  margin-left: -1em;
+  filter: drop-shadow(0px 0px 0px black);
+}
+.icomoon-network .path5:before {
+  content: "\e915";
+  margin-left: -1em;
+  filter: drop-shadow(0px 0px 0px black);
+}
+.icomoon-network .path6:before {
+  content: "\e916";
+  margin-left: -1em;
+  filter: drop-shadow(0px 0px 0px black);
+}
+.icomoon-network .path7:before {
+  content: "\e917";
+  margin-left: -1em;
+  filter: drop-shadow(0px 0px 0px black);
+}
+.icomoon-notification:before {
+  content: "\e918";
+  filter: drop-shadow(0px 0px 0px black);
+}
+.icomoon-pinned:before {
+  content: "\e919";
+  filter: drop-shadow(0px 0px 0px black);
+}
+.icomoon-shares:before {
+  content: "\e91a";
+  filter: drop-shadow(0px 0px 0px black);
+}
+.icomoon-statics:before {
+  content: "\e91b";
+  filter: drop-shadow(0px 0px 0px black);
+}
+.icomoon-switch-position:before {
+  content: "\e91c";
+  filter: drop-shadow(0px 0px 0px black);
+}
+.icomoon-threeDotsVertical:before {
+  content: "\e91d";
+  filter: drop-shadow(0px 0px 0px black);
+}
+.icomoon-time:before {
+  content: "\e91e";
+}
+.icomoon-translate:before {
+  content: "\e91f";
+  filter: drop-shadow(0px 0px 0px black);
+}
+.icomoon-user:before {
+  content: "\e920";
+}
+.icomoon-userNetwork:before {
+  content: "\e921";
+  filter: drop-shadow(0px 0px 0px black);
+}
+.icomoon-userStylih:before {
+  content: "\e922";
+}
